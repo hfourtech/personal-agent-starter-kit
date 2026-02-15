@@ -1,0 +1,6 @@
+services:
+  dev:
+    build: .
+    volumes:
+      - ./:/workdir
+    tty: true
