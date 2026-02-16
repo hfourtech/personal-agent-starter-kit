@@ -84,7 +84,7 @@ docker compose --profile gateway up -d
 docker compose run --rm picoclaw-agent -m "What is 2+2?"
 ```
 
-3) Resource usage & performance (practical view)
+# 3) Resource usage & performance (practical view)
 
 Exact numbers vary by model/provider and enabled tools, but as a rule of thumb:
 
@@ -94,7 +94,7 @@ Nanobot: medium footprint (lean, but Python runtime + tools)
 
 PicoClaw: lowest footprint (optimized for edge / low-resource)
 
-4) Who can use what
+# 4) Who can use what
 Choose OpenClaw if:
 
 you want a full assistant platform
@@ -113,7 +113,7 @@ you need edge/IoT/embedded-friendly deployment
 
 you want strict workspace sandboxing patterns
 
-5) Pros and cons
+# 5) Pros and cons
 OpenClaw
 
 Pros: richest features, platform feel
@@ -129,7 +129,7 @@ PicoClaw
 Pros: smallest footprint, Docker Compose friendly, strong workspace model
 Cons: smaller ecosystem, more “builder” oriented than “product” UI
 
-6) How these help (use cases)
+# 6) How these help (use cases)
 
 See: examples/use-cases.md
 
@@ -155,11 +155,11 @@ MEMORY.md (long-term notes)
 
 HEARTBEAT.md (periodic tasks list)
 
-Quick start
-0) Doctor (checks your machine)
+# Quick start
+## 0) Doctor (checks your machine)
 make doctor
 
-1) Scaffold a workspace
+## 1) Scaffold a workspace
 
 Pick one:
 
@@ -177,7 +177,7 @@ OpenClaw
 
 make setup_openclaw
 
-2) Run a test prompt
+## 2) Run a test prompt
 ./scripts/run.sh nanobot "Draft a status update for my project"
 ./scripts/run.sh picoclaw "Summarize my TODO list and propose a plan"
 ./scripts/run.sh openclaw "Help me plan the week"
@@ -185,7 +185,7 @@ make setup_openclaw
 
 Note: OpenClaw runs via its own gateway/dashboard workflow. This script prints the exact commands to run.
 
-Where do configs live?
+## Where do configs live?
 
 Nanobot typically uses: ~/.nanobot/config.json (you’ll be guided via nanobot onboard)
 
