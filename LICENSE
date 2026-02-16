@@ -2,4 +2,27 @@ MIT License
 
 Copyright (c) 2026
 
-Permission is hereby granted, free of charge...
+Permission is hereby granted, free of charge, to any person obtaining a copy...
+
+**Command verification sources:** OpenClaw getting started commands :contentReference[oaicite:1]{index=1}, Nanobot install + quick start :contentReference[oaicite:2]{index=2}, PicoClaw install + docker compose + agent command :contentReference[oaicite:3]{index=3}
+
+---
+
+## `Makefile`
+
+```make
+.PHONY: doctor setup_nanobot setup_picoclaw setup_openclaw
+
+doctor:
+	@bash scripts/doctor.sh
+
+setup_nanobot:
+	@bash scripts/setup_nanobot.sh
+
+setup_picoclaw:
+	@bash scripts/setup_picoclaw.sh
+
+setup_openclaw:
+	@bash scripts/setup_openclaw.sh
+
+

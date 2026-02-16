@@ -1,5 +1,16 @@
 {
-  "agent": {
-    "workspace": "~/.picoclaw/workspace"
+  "agents": {
+    "defaults": {
+      "workspace": "~/.picoclaw/workspace",
+      "restrict_to_workspace": true,
+      "temperature": 0.7,
+      "max_tool_iterations": 10
+    }
+  },
+  "providers": {
+    "openrouter": {
+      "api_key": "PUT_YOUR_KEY_HERE",
+      "api_base": "https://openrouter.ai/api/v1"
+    }
   }
 }
