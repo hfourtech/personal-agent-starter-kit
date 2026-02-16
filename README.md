@@ -51,26 +51,26 @@ Or stable install:
 uv tool install nanobot-ai
 # OR
 pip install nanobot-ai
+```
 
-
-Quick start:
-
+### Quick start:
+```bash
 nanobot onboard
 nanobot agent -m "Hello"
+```
+## PicoClaw
 
-PicoClaw
-
-Install (source):
-
+### Install (source):
+```bash
 git clone https://github.com/sipeed/picoclaw.git
 cd picoclaw
 make deps
 make build
 make install
+```
 
-
-Quick start:
-
+### Quick start:
+```bash
 picoclaw onboard
 picoclaw agent -m "Hello"
 
@@ -82,6 +82,7 @@ cd picoclaw
 cp config/config.example.json config/config.json
 docker compose --profile gateway up -d
 docker compose run --rm picoclaw-agent -m "What is 2+2?"
+```
 
 3) Resource usage & performance (practical view)
 
