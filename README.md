@@ -208,3 +208,17 @@ limit filesystem access
 use least-privilege API keys
 
 review tool actions before allowing them to run unattended
+
+---
+
+## About
+
+**H4T PDF Editor** is developed and maintained by **H4 Tech Solutions**.
+
+- Website: [www.h4tech.com](https://www.h4tech.com)
+
+---
+
+## License
+
+MIT
